@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peush Khajuria | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="#home">Peush<span>.</span></a>
+
+      <nav class="menu" id="menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn ghost" id="themeBtn" type="button" aria-label="Toggle theme">
+          🌙
+        </button>
+        <button class="btn ghost mobile" id="menuBtn" type="button" aria-label="Toggle menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="badge">Portfolio</p>
+        <h1>
+          Hi, I'm <span class="accent">Peush Khajuria</span>
+        </h1>
+        <p class="subtitle">
+          <span id="typing"></span><span class="cursor">|</span>
+        </p>
+
+        <div class="quick">
+          <div class="quick-card">
+            <div class="quick-title">Age</div>
+            <div class="quick-value">19</div>
+          </div>
+          <div class="quick-card">
+            <div class="quick-title">College</div>
+            <div class="quick-value">Parul University</div>
+          </div>
+          <div class="quick-card">
+            <div class="quick-title">Focus</div>
+            <div class="quick-value">Coding + Projects</div>
+          </div>
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="#contact">Contact Me</a>
+          <a class="btn" href="#skills">View Skills</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="avatar" aria-hidden="true">
+          <div class="avatar-inner">PK</div>
+        </div>
+        <div class="hero-card-body">
+          <h3>Quick Summary</h3>
+          <ul>
+            <li><b>Name:</b> Peush Khajuria</li>
+            <li><b>Age:</b> 19</li>
+            <li><b>College:</b> Parul University</li>
+            <li><b>Skills:</b> C, Python Full Stack</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="muted">
+        I'm Peush Khajuria, a 19-year-old student at Parul University. I’m focused on building
+        strong fundamentals in programming and creating real projects to level up my skills.
+      </p>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>What I’m doing</h3>
+          <p class="muted">
+            Learning, practicing DSA, and building web + Python projects.
+          </p>
+        </div>
+        <div class="card">
+          <h3>What I want</h3>
+          <p class="muted">
+            Become job-ready with solid problem-solving + project portfolio.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Strength</h3>
+          <p class="muted">
+            Consistent practice and focus on fundamentals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <p class="muted">These are the main skills I want to highlight.</p>
+
+      <div class="skills">
+        <div class="skill card">
+          <div class="skill-top">
+            <h3>C</h3>
+            <span class="pill">Core</span>
+          </div>
+          <div class="bar">
+            <div class="fill" style="width: 75%"></div>
+          </div>
+          <p class="muted">Basics, loops, arrays, pointers (learning deeper).</p>
+        </div>
+
+        <div class="skill card">
+          <div class="skill-top">
+            <h3>Python Full Stack</h3>
+            <span class="pill">Web</span>
+          </div>
+          <div class="bar">
+            <div class="fill" style="width: 65%"></div>
+          </div>
+          <p class="muted">Frontend + backend basics, building simple apps.</p>
+        </div>
+      </div>
+
+      <div class="note card">
+        <h3>Want to add more?</h3>
+        <p class="muted">
+          Add sections like Projects, Education details, Certificates, Resume link, and GitHub.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="muted">This form is UI-only (no backend). It will show a success message.</p>
+
+      <form id="contactForm" class="card form">
+        <div class="row">
+          <label>
+            Your Name
+            <input type="text" id="cName" placeholder="Enter your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" id="cEmail" placeholder="Enter your email" required />
+          </label>
+        </div>
+
+        <label>
+          Message
+          <textarea id="cMsg" rows="5" placeholder="Type your message..." required></textarea>
+        </label>
+
+        <button class="btn primary" type="submit">Send</button>
+        <p id="formStatus" class="status" aria-live="polite"></p>
+      </form>
+
+      <footer class="footer muted">
+        © <span id="year"></span> Peush Khajuria — Built with HTML, CSS, JS
+      </footer>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
